@@ -1,0 +1,86 @@
+.floorplan {
+  background-color: #1c0a09;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.floorplan-upper,
+.floorplan-lower {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.floorplan-upper.fadeIn,
+.floorplan-lower.fadeIn {
+  opacity: 1;
+}
+
+.floorplan-upper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.floorplan-title h1 {
+  font-family: "CormorantSC-Light", sans-serif;
+  color: white;
+  font-size: 3.5rem;
+  font-weight: 300;
+}
+
+.floorplan-description p {
+  font-family: "JosefinSans-Thin", sans-serif;
+  color: #a06c50;
+  font-weight: 600;
+  font-size: large;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.floorplan-lower {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.floorplan-stats {
+  min-width: 50%;
+  margin-right: 70px;
+}
+
+.stats-list-item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: #a06c50 solid 1px;
+}
+
+.stat {
+  color: white;
+  font-family: "JosefinSans-Thin", sans-serif;
+}
+
+@media screen and (max-width: 1150px) {
+  .floorplan-image img {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .floorplan-lower {
+    flex-direction: column;
+  }
+  .floorplan-description p {
+    margin: 10px 30px;
+    text-align: center;
+  }
+  .floorplan-stats {
+    min-width: 80%;
+    margin-bottom: 50px;
+  }
+}

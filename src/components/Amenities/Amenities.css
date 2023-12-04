@@ -1,0 +1,94 @@
+.amenities {
+  background: url("../../assets/bg-img3.jpg") repeat;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+
+.amenities-list {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.amenities-list.fadeIn {
+  opacity: 1;
+}
+
+.amenities-header {
+  display: flex;
+  flex-direction: column;
+  padding: 60px 0;
+  width: 350px;
+}
+
+.amenities-header h2 {
+  font-size: 1.6rem;
+  font-family: "CormorantSC-Light", sans-serif;
+  color: black;
+  margin: 0;
+}
+
+.amenities-header h1 {
+  font-family: "CormorantSC-Light", sans-serif;
+  font-size: 3rem;
+  margin: 20px, 0;
+  margin-top: 10px;
+  color: white;
+  font-weight: 200;
+}
+
+.amenity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 320px;
+  margin: 50px 20px;
+}
+
+.amenity img {
+  width: 65px;
+  transition: transform 0.7s ease;
+}
+
+.amenity img:hover {
+  transform: rotateY(360deg);
+}
+
+.amenity h2 {
+  font-size: 1.1rem;
+  text-align: center;
+  letter-spacing: 1px;
+  font-family: "CormorantSC-Light", sans-serif;
+  font-weight: 600;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  color: black;
+}
+
+.amenity p {
+  text-align: center;
+  font-weight: 600;
+  font-size: medium;
+  font-family: "JosefinSans-Thin", sans-serif;
+}
+
+@media screen and (max-width: 1150px) {
+  .amenities-header {
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 0;
+  }
+
+  .amenities-header h1,
+  .amenities-header h3 {
+    text-align: center;
+  }
+}

@@ -1,0 +1,143 @@
+.intro-body {
+  background-color: #1c0a09;
+}
+
+.slikica {
+  height: 80px;
+}
+
+.levo {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.desno {
+  display: flex;
+  flex-direction: column;
+}
+.container .desno {
+  flex: 1;
+}
+.container .desno h1 {
+  font-family: "Forum";
+  font-size: xx-large;
+  font-weight: 100;
+  position: relative;
+  color: transparent;
+  animation: text_revealing 1.5s ease forwards;
+  display: inline-block;
+  margin: 5px;
+}
+.container .desno h1:nth-child(1) {
+  animation-delay: 1.5s;
+}
+.container .desno h1:nth-child(2) {
+  animation-delay: 2s;
+}
+
+.container .desno h1:nth-child(1) span {
+  animation-delay: 1s;
+}
+.container .desno h1:nth-child(2) span {
+  animation-delay: 1.5s;
+}
+.container .desno h1 span {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 0;
+  left: 0;
+  top: 0;
+  background-color: white;
+  animation: revealing 3s ease forwards;
+  animation-delay: 1s;
+}
+.container .levo {
+  flex: 1;
+}
+@keyframes text_revealing {
+  100% {
+    color: white;
+  }
+}
+@keyframes revealing {
+  50% {
+    width: 35%;
+    left: 0;
+  }
+  100% {
+    left: 35%;
+    width: 0%;
+  }
+}
+
+@media only screen and (max-width: 890px) {
+  @keyframes revealing {
+    50% {
+      width: 65%;
+      left: 0;
+    }
+    100% {
+      left: 65%;
+      width: 0%;
+    }
+  }
+
+  .container .desno h1:nth-child(1) {
+    animation-delay: 1.5s;
+  }
+  .container .desno h1:nth-child(2) {
+    animation-delay: 2.5s;
+  }
+
+  .container .desno h1:nth-child(1) span {
+    animation-delay: 0.5s;
+  }
+  .container .desno h1:nth-child(2) span {
+    animation-delay: 1.5s;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .slikica {
+    height: 60px;
+  }
+
+  .container .desno h1 {
+    font-size: large;
+  }
+
+  @keyframes revealing {
+    50% {
+      width: 70%;
+      left: 0;
+    }
+    100% {
+      left: 70%;
+      width: 0%;
+    }
+  }
+
+  .container .desno h1:nth-child(1) {
+    animation-delay: 1.5s;
+  }
+  .container .desno h1:nth-child(2) {
+    animation-delay: 2s;
+  }
+
+  .container .desno h1:nth-child(1) span {
+    animation-delay: 0.5s;
+  }
+  .container .desno h1:nth-child(2) span {
+    animation-delay: 1s;
+  }
+}

@@ -1,0 +1,83 @@
+@font-face {
+  font-family: "Megrim";
+  src: url("../fonts/Megrim.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Goldoni";
+  src: url("../fonts/Goldoni.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bowhouse";
+  src: url("../fonts/Bowhouse.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Monterey";
+  src: url("../fonts/Monterey.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pirulen";
+  src: url("../fonts/Pirulen.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Calligraphy";
+  src: url("../fonts/Calligraphy.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "JosefinSans";
+  src: url("../fonts/JosefinSans.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "JosefinSans-Thin";
+  src: url("../fonts/JosefinSans-Thin.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gruppo";
+  src: url("../fonts/Gruppo.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CormorantSC";
+  src: url("../fonts/CormorantSC.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CormorantSC-Light";
+  src: url("../fonts/CormorantSC-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Forum";
+  src: url("../fonts/Forum.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

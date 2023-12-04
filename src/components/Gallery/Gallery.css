@@ -1,0 +1,143 @@
+.gallery {
+  background: url("../../assets/bg-img2.jpg") repeat;
+  padding: 100px;
+}
+
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.gallery-container.fadeIn {
+  opacity: 1;
+}
+
+.gallery-header {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.gallery-header h1 {
+  font-family: "CormorantSC-Light", sans-serif;
+  font-size: 4rem;
+  font-weight: 100;
+  color: white;
+  margin: 0;
+}
+
+.gallery-header p {
+  font-family: "JosefinSans-Thin", sans-serif;
+  font-size: large;
+  color: white;
+  line-height: 1.5;
+}
+
+.imported-gallery {
+  width: 50%;
+  margin-left: 50px;
+}
+
+.gallery-button {
+  display: inline-flex;
+  height: 40px;
+  width: 150px;
+  border: 1px solid #a06c50;
+  margin: 20px 0;
+  color: #a06c50;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.8em;
+  letter-spacing: 1.5px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.gallery-klik {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-family: "JosefinSans-Thin", sans-serif;
+  font-weight: 600;
+}
+
+#gallery-button-2 {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#gallery-button-2 .gallery-klik {
+  position: relative;
+  transition: all 0.5s ease-Out;
+}
+
+#gallery-slide {
+  width: 100%;
+  height: 100%;
+  left: -200px;
+  background: #a06c50;
+  position: absolute;
+  transition: all 0.5s ease-Out;
+  bottom: 0;
+}
+
+#gallery-button-2:hover #gallery-slide {
+  left: 0;
+}
+
+#gallery-button-2:hover .gallery-klik {
+  color: white;
+}
+
+@media screen and (max-width: 1150px) {
+  .gallery-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .imported-gallery {
+    width: 90%;
+    margin: 30px 0;
+  }
+
+  .gallery-header {
+    width: 85%;
+    align-items: center;
+  }
+
+  .gallery-header h1 {
+    text-align: center;
+  }
+
+  .gallery-header p {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .gallery {
+    padding: 30px;
+  }
+
+  .imported-gallery {
+    max-width: 90%;
+    margin: 30px 0;
+  }
+
+  .gallery-header {
+    width: 85%;
+  }
+
+  .gallery-header h1 {
+    font-size: 2.7rem;
+  }
+
+  .gallery-header p {
+    font-size: medium;
+  }
+}
