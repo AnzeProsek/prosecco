@@ -77,6 +77,10 @@
 }
 
 @media screen and (max-width: 650px) {
+  .floorplan-title h1 {
+    font-size: 2.7rem;
+  }
+
   .floorplan-lower {
     flex-direction: column;
   }
