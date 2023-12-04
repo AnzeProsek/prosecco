@@ -29,9 +29,10 @@
 }
 
 .amenities-header h2 {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   font-family: "CormorantSC-Light", sans-serif;
   color: black;
+  text-transform: uppercase;
   margin: 0;
 }
 
