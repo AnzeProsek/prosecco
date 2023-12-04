@@ -14,7 +14,7 @@
   flex-wrap: wrap;
   max-width: 100%;
   opacity: 0;
-  transition: opacity 1s ease-in-out;
+  transition: opacity 0.7s ease-in-out;
 }
 
 .amenities-list.fadeIn {

@@ -9,6 +9,13 @@
 
 .left-content {
   flex: 1;
+  opacity: 0;
+  transition: opacity 0.7s ease;
+}
+
+.left-content.in-view {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .app-header-h1 {
@@ -100,38 +107,19 @@
   transform: scale(0.1, 1);
 }
 
-.wrapper-transform {
-  opacity: 0;
-  transition: opacity 1.5s ease-out;
-  flex: 1;
-  padding: 20px;
-}
-
-.app-header.show {
-  .wrapper-transform {
-    opacity: 1;
-  }
-
-  .img-transform {
-    transform: translateX(0);
-  }
-}
-
 .right-content {
   background: url("../../assets/oli_1.png");
   height: 95vh;
   background-size: cover;
   flex: 5;
+  opacity: 0;
+  transform: translateX(500px);
+  transition: opacity 0.7s ease, transform 1.5s ease;
 }
 
-.img-transform {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transform: translateX(200%);
-  transition: transform 1.5s ease-out;
-  flex: 5;
-  padding: 20px;
+.right-content.in-view {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .content-under {
@@ -148,29 +136,36 @@
 @media screen and (max-width: 1150px) {
   .app-header {
     flex-direction: column;
-    padding-left: 20px;
+    align-items: flex-start;
+    padding-left: 50px;
+    min-height: 60vh;
+  }
+  .left-content {
+    max-width: 80%;
   }
   .app-header-h1 {
     font-size: 4rem;
   }
+
   .right-content {
     display: none;
   }
 
   .content-under {
     display: flex;
-    width: 100%;
+    max-width: 80%;
+    opacity: 0;
+    transition: opacity 0.7s ease;
+    margin-bottom: 40px;
+  }
+
+  .content-under.in-view {
+    opacity: 1;
+    transform: translateX(0);
   }
 
   .content-under img {
     width: 600px;
-    padding-left: 20px;
-  }
-
-  .img-transform {
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding-left: 20px;
   }
 
   .left-content {
@@ -178,20 +173,27 @@
   }
 
   .btn {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 }
 
 @media screen and (max-width: 650px) {
+  .app-header {
+    padding-left: 35px;
+  }
   .app-header-h1 {
     font-size: 3rem;
   }
+
+  .btn {
+    margin-bottom: 50px;
+  }
+
   .content-under img {
-    width: 80%;
-    padding-left: 20px;
+    width: 300px;
   }
   .content-under {
-    margin-bottom: 20px;
+    margin-bottom: 70px;
   }
 }
 

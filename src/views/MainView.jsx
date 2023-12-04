@@ -1,5 +1,6 @@
 import React from "react";
-import Header from "../components/Header/Header";
+//import Header from "../components/Header/Header";
+import Headertest from "../components/Headertest/Headertest";
 import Navbar from "../components/Navbar/Navbar";
 import Overview from "../components/Overview/Overview";
 import FloorPlan from "../components/FloorPlan/FloorPlan";
@@ -13,7 +14,7 @@ const MainView = () => {
   return (
     <>
       <Navbar />
-      <Header />
+      <Headertest />
       <Overview />
       <Amenities />
       <Map />
