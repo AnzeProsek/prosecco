@@ -75,6 +75,10 @@
 }
 
 @media screen and (max-width: 1150px) {
+  .footer-container {
+    opacity: 1;
+    transition: none;
+  }
   .footer-column {
     max-width: 33%;
   }

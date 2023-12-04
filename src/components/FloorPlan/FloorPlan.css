@@ -66,6 +66,11 @@
 }
 
 @media screen and (max-width: 1150px) {
+  .floorplan-upper,
+  .floorplan-lower {
+    opacity: 1;
+    transition: none;
+  }
   .floorplan-image img {
     width: 300px;
   }

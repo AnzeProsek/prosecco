@@ -129,6 +129,8 @@
 
   .overview-desno {
     width: 65%;
+    opacity: 1;
+    transition: none;
   }
 }
 

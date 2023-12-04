@@ -158,6 +158,11 @@
 }
 
 @media screen and (max-width: 1150px) {
+  .location-container {
+    opacity: 1;
+    transition: none;
+  }
+
   .location-component-content {
     flex-direction: column;
   }
