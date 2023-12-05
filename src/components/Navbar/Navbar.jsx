@@ -22,13 +22,18 @@ const Navbar = () => {
           </a>
         </li>
         <li>
+          <a className="link" href="#location">
+            Location
+          </a>
+        </li>
+        <li>
           <a className="link" href="#amenities">
             Amenities
           </a>
         </li>
         <li>
-          <a className="link" href="#location">
-            Location
+          <a className="link" href="#activities">
+            Activities
           </a>
         </li>
         <li>
@@ -83,6 +88,15 @@ const Navbar = () => {
               </li>
               <li>
                 <a
+                  href="#location"
+                  className="link"
+                  onClick={() => setToggleMenu(false)}
+                >
+                  Location
+                </a>
+              </li>
+              <li>
+                <a
                   href="#amenities"
                   className="link"
                   onClick={() => setToggleMenu(false)}
@@ -92,11 +106,11 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  href="#location"
+                  href="#activities"
                   className="link"
                   onClick={() => setToggleMenu(false)}
                 >
-                  Location
+                  Activities
                 </a>
               </li>
               <li>
