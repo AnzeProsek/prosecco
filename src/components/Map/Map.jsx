@@ -115,8 +115,8 @@ const Map = () => {
           </div>
           <div className="map-section">
             <MapContainer
-              center={[46.329986479989046, 13.541293759412671]}
-              zoom={15}
+              center={[46.331803765828226, 13.540093759412671]}
+              zoom={16}
               scrollWheelZoom={false}
               style={{ height: "60vh" }}
             >
@@ -125,7 +125,7 @@ const Map = () => {
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
               />
               <Marker
-                position={[46.329986479989046, 13.541293759412671]}
+                position={[46.331803765828226, 13.540093759412671]}
                 icon={apartmentIcon}
               >
                 <Popup>The apartment.</Popup>
