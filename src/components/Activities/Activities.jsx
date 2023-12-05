@@ -48,7 +48,7 @@ const Activities = () => {
           <div class="card">
             <div class="front">
               <img className="ikonca" src={images.rafting} alt="header_img" />
-              <h3>Rafting</h3>
+              <h3 className="activity-name">Rafting</h3>
             </div>
             <div class="back">
               <div>
@@ -63,7 +63,7 @@ const Activities = () => {
                 src={images.paragliding}
                 alt="header_img"
               />
-              <h3>Paragliding</h3>
+              <h3 className="activity-name">Paragliding</h3>
             </div>
             <div class="back">
               <div>
@@ -74,7 +74,7 @@ const Activities = () => {
           <div class="card">
             <div class="front">
               <img className="ikonca" src={images.canyoning} alt="header_img" />
-              <h3>Canyoning</h3>
+              <h3 className="activity-name">Canyoning</h3>
             </div>
             <div class="back">
               <div>
@@ -85,7 +85,7 @@ const Activities = () => {
           <div class="card">
             <div class="front">
               <img className="ikonca" src={images.hiking} alt="header_img" />
-              <h3>Hiking</h3>
+              <h3 className="activity-name">Hiking</h3>
             </div>
             <div class="back">
               <div>
@@ -96,7 +96,7 @@ const Activities = () => {
           <div class="card">
             <div class="front">
               <img className="ikonca" src={images.zipline} alt="header_img" />
-              <h3>Ziplining</h3>
+              <h3 className="activity-name">Ziplining</h3>
             </div>
             <div class="back">
               <div>
@@ -107,7 +107,7 @@ const Activities = () => {
           <div class="card">
             <div class="front">
               <img className="ikonca" src={images.skiing} alt="header_img" />
-              <h3>Skiing</h3>
+              <h3 className="activity-name">Skiing</h3>
             </div>
             <div class="back">
               <div>

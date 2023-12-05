@@ -1,5 +1,5 @@
 .activities-section {
-  background: url("../../assets/bg-img1.jpg") repeat;
+  background: url("../../assets/bg-img2.jpg");
   display: flex;
   min-height: 30vh;
   align-items: center;
@@ -22,8 +22,8 @@
 .activities-header h4 {
   font-size: 1.1rem;
   font-family: "CormorantSC-Light", sans-serif;
-  font-weight: 600;
-  color: black;
+  font-weight: 200;
+  color: white;
   text-transform: uppercase;
   margin: 0;
   margin-top: 30px;
@@ -55,7 +55,7 @@
   height: 300px;
   perspective: 1000px;
   position: relative;
-  margin: 20px;
+  margin: 20px, 0;
 }
 
 .card img {
@@ -66,7 +66,6 @@
 .back {
   position: relative;
   display: flex;
-  border-radius: 6px;
   background-position: center;
   background-size: cover;
   text-align: center;
@@ -90,7 +89,7 @@
   font-family: Poppins, sans-serif;
 }
 
-.front h3 {
+.activity-name {
   margin: 0;
   position: absolute;
   left: 20px;
@@ -99,6 +98,7 @@
   font-weight: 200;
   font-size: 1.8rem;
   color: white;
+  border-bottom: #a06c50 1px solid;
 }
 
 .front:before {
@@ -109,7 +109,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: url("../../assets/bg-img2.jpg");
+  background: transparent;
   z-index: -1;
 }
 
@@ -121,7 +121,7 @@
 }
 
 .back {
-  background: url("../../assets/bg-img2.jpg");
+  background: transparent;
   transform: rotateY(-180deg);
 }
 
