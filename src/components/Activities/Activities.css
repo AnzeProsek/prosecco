@@ -1,0 +1,172 @@
+.activities-section {
+  background: url("../../assets/bg-img1.jpg") repeat;
+  display: flex;
+  min-height: 30vh;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.activities-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.activities-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.activities-header h4 {
+  font-size: 1.1rem;
+  font-family: "CormorantSC-Light", sans-serif;
+  font-weight: 600;
+  color: black;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.activities-header h2 {
+  font-size: 2.8rem;
+  font-family: "CormorantSC-Light", sans-serif;
+  font-weight: 200;
+  color: #a06c50;
+  margin: 0;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.activities-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  color: inherit;
+  cursor: pointer;
+  width: 250px;
+  height: 300px;
+  perspective: 1000px;
+  position: relative;
+  margin: 20px;
+}
+
+.card img {
+  height: 80px;
+}
+
+.front,
+.back {
+  position: relative;
+  display: flex;
+  border-radius: 6px;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transform-origin: center bottom;
+  transition: ease-in-out 600ms;
+}
+
+.front {
+  font-size: 1.618rem;
+  font-weight: 600;
+  color: #fff;
+  overflow: hidden;
+  font-family: Poppins, sans-serif;
+}
+
+.front h3 {
+  margin: 0;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  font-family: "CormorantSC-Light", sans-serif;
+  font-weight: 200;
+  font-size: 1.8rem;
+  color: white;
+  text-transform: uppercase;
+}
+
+.front:before {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("../../assets/bg-img2.jpg");
+  z-index: -1;
+}
+
+.card:hover .front {
+  transform: rotateY(180deg);
+}
+.card:nth-child(even):hover .front {
+  transform: rotateY(-180deg);
+}
+
+.back {
+  background: #fff;
+  transform: rotateY(-180deg);
+}
+
+.back .button {
+  background: linear-gradient(135deg, #1a9be6, #1a57e6);
+}
+
+.back .button:before {
+  box-shadow: 0 0 10px 10px rgba(26, 87, 230, 0.25);
+  background-color: rgba(26, 87, 230, 0.25);
+}
+
+.card:hover .back {
+  transform: rotateY(0deg);
+}
+
+.card:nth-child(even) .back {
+  transform: rotateY(180deg);
+}
+
+.card:nth-child(even) .back .button {
+  background: linear-gradient(135deg, #e61a80, #e61a3c);
+}
+
+.card:nth-child(even) .back .button:before {
+  box-shadow: 0 0 10px 10px rgba(230, 26, 60, 0.25);
+  background-color: rgba(230, 26, 60, 0.25);
+}
+
+.card:nth-child(even):hover .back {
+  transform: rotateY(0deg);
+}
+
+@media screen and (max-width: 1150px) {
+  .card img {
+    height: 70px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .card img {
+    height: 60px;
+  }
+  .front h3 {
+    font-size: 1.5rem;
+  }
+}

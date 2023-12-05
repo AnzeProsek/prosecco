@@ -8,6 +8,7 @@ import Amenities from "../components/Amenities/Amenities";
 import Gallery from "../components/Gallery/Gallery";
 import Footer from "../components/Footer/Footer";
 import Map from "../components/Map/Map";
+import Activities from "../components/Activities/Activities";
 
 const MainView = () => {
   return (
@@ -15,8 +16,9 @@ const MainView = () => {
       <Navbar />
       <Header />
       <Overview />
-      <Amenities />
       <Map />
+      <Amenities />
+      <Activities />
       <FloorPlan />
       <Gallery />
       <Footer />

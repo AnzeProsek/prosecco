@@ -32,6 +32,12 @@ import pinhospital2 from "../assets/pin-hospital2.png";
 import pinrestaurant2 from "../assets/pin-restaurant2.png";
 import pinstore2 from "../assets/pin-store2.png";
 import chargericon from "../assets/charger-icon.png";
+import hiking from "../assets/hiking.png";
+import canyoning from "../assets/grand-canyon.png";
+import paragliding from "../assets/paragliding.png";
+import rafting from "../assets/rafting.png";
+import zipline from "../assets/zipline.png";
+import skiing from "../assets/skiing.png";
 
 export default {
   kucica,
@@ -68,4 +74,10 @@ export default {
   pinrestaurant2,
   pinstore2,
   chargericon,
+  hiking,
+  canyoning,
+  paragliding,
+  rafting,
+  zipline,
+  skiing,
 };

@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import images from "../../constants/images";
 import "./Header.css";
 
-const Headertest = () => {
+const Header = () => {
   const headerRef = useRef(null);
   const leftRef = useRef(null);
   const rightRef = useRef(null);
@@ -55,4 +55,4 @@ const Headertest = () => {
   );
 };
 
-export default Headertest;
+export default Header;
