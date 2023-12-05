@@ -31,6 +31,7 @@ import pincity2 from "../assets/pin-city2.png";
 import pinhospital2 from "../assets/pin-hospital2.png";
 import pinrestaurant2 from "../assets/pin-restaurant2.png";
 import pinstore2 from "../assets/pin-store2.png";
+import chargericon from "../assets/charger-icon.png";
 
 export default {
   kucica,
@@ -66,4 +67,5 @@ export default {
   pinhospital2,
   pinrestaurant2,
   pinstore2,
+  chargericon,
 };

@@ -6,7 +6,6 @@ const Headertest = () => {
   const headerRef = useRef(null);
   const leftRef = useRef(null);
   const rightRef = useRef(null);
-  const underRef = useRef(null);
 
   const handleIntersection = (entries, observer) => {
     entries.forEach((entry) => {
@@ -29,7 +28,6 @@ const Headertest = () => {
     observer.observe(headerRef.current);
     observer.observe(leftRef.current);
     observer.observe(rightRef.current);
-    observer.observe(underRef.current);
 
     return () => {
       observer.disconnect();
@@ -50,7 +48,7 @@ const Headertest = () => {
         </div>
       </div>
       <div className="right-content" ref={rightRef}></div>
-      <div className="content-under" ref={underRef}>
+      <div className="content-under">
         <img src={images.oli} alt="header_img" />
       </div>
     </div>

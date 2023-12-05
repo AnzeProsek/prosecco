@@ -67,15 +67,15 @@ const Amenities = () => {
         </div>
         <div className="amenity">
           <img className="ikonca" src={images.caricon} alt="header_img" />
-          <h2>Parking space</h2>
+          <h2>Garage</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
             quibusdam!
           </p>
         </div>
         <div className="amenity">
-          <img className="ikonca" src={images.mountain} alt="header_img" />
-          <h2>Ideal location</h2>
+          <img className="ikonca" src={images.chargericon} alt="header_img" />
+          <h2>Charging station</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
             quibusdam!

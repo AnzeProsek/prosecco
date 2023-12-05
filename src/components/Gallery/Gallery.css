@@ -93,6 +93,19 @@
   color: white;
 }
 
+.image-gallery-icon:hover,
+.image-gallery-icon:focus,
+.image-gallery-using-mouse .image-gallery-icon:focus,
+.image-gallery-fullscreen-button .image-gallery-svg,
+.image-gallery-play-button .image-gallery-svg,
+.image-gallery-bullets .image-gallery-bullet:focus,
+.image-gallery-bullets .image-gallery-bullet.active,
+.image-gallery-bullets .image-gallery-bullet:hover,
+.image-gallery-thumbnail.active,
+.image-gallery-thumbnail:focus {
+  color: #a06c50;
+}
+
 @media screen and (max-width: 1150px) {
   .gallery-container {
     flex-direction: column;
