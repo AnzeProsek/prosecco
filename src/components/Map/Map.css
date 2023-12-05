@@ -178,6 +178,10 @@
     margin-bottom: 10px;
   }
 
+  .location-component-header img {
+    display: none;
+  }
+
   .location-header-text p {
     max-width: 80%;
   }
