@@ -191,7 +191,9 @@
   }
 
   .location-component-header {
-    display: none;
+    font-size: large;
+    justify-content: flex-start;
+    margin-bottom: 0;
   }
 
   .leaflet-container {
@@ -204,8 +206,8 @@
     padding: 50px 40px;
   }
 
-  .location-component-header {
-    display: none;
+  .location-component-header h1 {
+    font-size: xx-large;
   }
 
   .location-header h1 {

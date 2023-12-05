@@ -42,7 +42,7 @@ const Activities = () => {
       <div className="activities-container">
         <div className="activities-header">
           <h4>Activities</h4>
-          <h2>Find the perfect activity for yourself.</h2>
+          <h2>Find the perfect activity for yourself</h2>
         </div>
         <div className="activities-list">
           <div class="card">
@@ -53,10 +53,6 @@ const Activities = () => {
             <div class="back">
               <div>
                 <p>Consectetur adipisicing elit. Possimus, praesentium?</p>
-                <p>
-                  Provident consectetur natus voluptatem quis tenetur sed beatae
-                  eius sint.
-                </p>
               </div>
             </div>
           </div>
@@ -72,10 +68,6 @@ const Activities = () => {
             <div class="back">
               <div>
                 <p>Consectetur adipisicing elit. Possimus, praesentium?</p>
-                <p>
-                  Provident consectetur natus voluptatem quis tenetur sed beatae
-                  eius sint.
-                </p>
               </div>
             </div>
           </div>
@@ -87,10 +79,6 @@ const Activities = () => {
             <div class="back">
               <div>
                 <p>Consectetur adipisicing elit. Possimus, praesentium?</p>
-                <p>
-                  Provident consectetur natus voluptatem quis tenetur sed beatae
-                  eius sint.
-                </p>
               </div>
             </div>
           </div>
@@ -102,10 +90,6 @@ const Activities = () => {
             <div class="back">
               <div>
                 <p>Consectetur adipisicing elit. Possimus, praesentium?</p>
-                <p>
-                  Provident consectetur natus voluptatem quis tenetur sed beatae
-                  eius sint.
-                </p>
               </div>
             </div>
           </div>
@@ -117,10 +101,6 @@ const Activities = () => {
             <div class="back">
               <div>
                 <p>Consectetur adipisicing elit. Possimus, praesentium?</p>
-                <p>
-                  Provident consectetur natus voluptatem quis tenetur sed beatae
-                  eius sint.
-                </p>
               </div>
             </div>
           </div>
@@ -132,10 +112,6 @@ const Activities = () => {
             <div class="back">
               <div>
                 <p>Consectetur adipisicing elit. Possimus, praesentium?</p>
-                <p>
-                  Provident consectetur natus voluptatem quis tenetur sed beatae
-                  eius sint.
-                </p>
               </div>
             </div>
           </div>
