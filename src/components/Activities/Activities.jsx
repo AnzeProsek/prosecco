@@ -2,44 +2,37 @@ import React, { useEffect, useState, useRef } from "react";
 import images from "../../constants/images";
 import "./Activities.css";
 
-//rafting
-//canyoning
-//zipline
-//paragliding
-//hiking
-//skiing
-
 const Activities = () => {
-  //   const activitiesRef = useRef(null);
+  const activitiesRef = useRef(null);
 
-  //   const handleIntersection = (entries, observer) => {
-  //     entries.forEach((entry) => {
-  //       if (entry.isIntersecting) {
-  //         entry.target.classList.add("in-view");
-  //         observer.unobserve(entry.target);
-  //       }
-  //     });
-  //   };
+  const handleIntersection = (entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("in-view");
+        observer.unobserve(entry.target);
+      }
+    });
+  };
 
-  //   useEffect(() => {
-  //     const options = {
-  //       root: null,
-  //       rootMargin: "0px",
-  //       threshold: 0.5,
-  //     };
+  useEffect(() => {
+    const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.5,
+    };
 
-  //     const observer = new IntersectionObserver(handleIntersection, options);
+    const observer = new IntersectionObserver(handleIntersection, options);
 
-  //     observer.observe(activitiesRef.current);
+    observer.observe(activitiesRef.current);
 
-  //     return () => {
-  //       observer.disconnect();
-  //     };
-  //   }, []);
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
 
   return (
     <div className="activities-section" id="activities">
-      <div className="activities-container">
+      <div className="activities-container" ref={activitiesRef}>
         <div className="activities-header">
           <h4>Activities</h4>
           <h2>Find the perfect activity for yourself</h2>
