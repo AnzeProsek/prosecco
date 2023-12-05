@@ -122,11 +122,12 @@
 }
 
 .back {
-  background: #fff;
+  background: url("../../assets/bg-img2.jpg");
   transform: rotateY(-180deg);
 }
 
 .back p {
+  color: white;
   font-weight: 600;
   font-size: large;
   font-family: "JosefinSans-Thin", sans-serif;
