@@ -3,36 +3,26 @@ import images from "../../constants/images";
 import "./Activities.css";
 
 const Activities = () => {
-  const activitiesRef = useRef(null);
-
-  const handleIntersection = (entries, observer) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("in-view");
-        observer.unobserve(entry.target);
-      }
-    });
-  };
-
   useEffect(() => {
-    const options = {
-      root: null,
-      rootMargin: "0px",
-      threshold: 0.5,
-    };
+    const activitiesElement = document.querySelector(".activities-container");
 
-    const observer = new IntersectionObserver(handleIntersection, options);
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            activitiesElement.classList.add("fadeIn");
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
 
-    observer.observe(activitiesRef.current);
-
-    return () => {
-      observer.disconnect();
-    };
+    observer.observe(activitiesElement);
+    return () => observer.disconnect();
   }, []);
-
   return (
     <div className="activities-section" id="activities">
-      <div className="activities-container" ref={activitiesRef}>
+      <div className="activities-container">
         <div className="activities-header">
           <h4>Activities</h4>
           <h2>Find the perfect activity for yourself</h2>

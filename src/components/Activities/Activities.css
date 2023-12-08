@@ -15,7 +15,7 @@
   transition: opacity 0.7s ease-in-out;
 }
 
-.activities-container.in-view {
+.activities-container.fadeIn {
   opacity: 1;
 }
 
